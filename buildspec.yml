@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - echo "Building"
-      - mvn clear compile package
+      - mvn clean compile package
   post_build:
     commands:
       - echo "Pos Building"
