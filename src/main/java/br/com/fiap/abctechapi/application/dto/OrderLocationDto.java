@@ -20,6 +20,6 @@ public class OrderLocationDto {
     private Double longitude;
 
     @PastOrPresent
-    @JsonProperty("datetime")
+    @JsonProperty("dateTime")
     private Date date;
 }
