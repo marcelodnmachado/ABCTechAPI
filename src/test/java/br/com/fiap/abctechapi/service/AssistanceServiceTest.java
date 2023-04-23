@@ -12,8 +12,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.List;
+
 @SpringBootTest
 public class AssistanceServiceTest {
+
+
+
     private AssistanceService assistanceService;
     @MockBean
     private AssistanceRepository assistanceRepository;
