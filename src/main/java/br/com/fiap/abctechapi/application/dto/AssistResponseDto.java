@@ -1,6 +1,5 @@
 package br.com.fiap.abctechapi.application.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

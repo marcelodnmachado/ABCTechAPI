@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RequestMapping("/order")
 @RestController
@@ -22,8 +23,8 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<String> create(@Valid @RequestBody OrderDto orderDto) throws Exception {
-
         this.orderApplication.createOrder(orderDto);
         return ResponseEntity.ok().build();
     }
+
 }

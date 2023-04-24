@@ -8,8 +8,9 @@ import br.com.fiap.abctechapi.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class OrderApplicationImpl implements OrderApplication {
@@ -24,7 +25,6 @@ public class OrderApplicationImpl implements OrderApplication {
 
     @Override
     public void createOrder(OrderDto orderDto) throws Exception {
-        //service?
         Order order = new Order();
         order.setOperatorId(orderDto.getOperatorId());
         order.setStartOrderLocation(
@@ -41,4 +41,5 @@ public class OrderApplicationImpl implements OrderApplication {
 
         this.orderService.saveOrder(order, orderDto.getServices());
     }
+
 }

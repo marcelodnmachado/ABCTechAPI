@@ -1,6 +1,5 @@
 package br.com.fiap.abctechapi.util;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

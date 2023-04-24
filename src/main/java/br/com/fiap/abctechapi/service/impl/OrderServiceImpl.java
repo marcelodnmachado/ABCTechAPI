@@ -30,7 +30,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void saveOrder(Order order, List<Long> assistsId) throws Exception {
+    public void saveOrder(Order order, List<Long> assistsId) {
         ArrayList<Assistance> list = new ArrayList<>();
         assistsId.forEach( id -> {
             Optional<Assistance> assistance = assistanceRepository.findById(id);
@@ -46,4 +46,5 @@ public class OrderServiceImpl implements OrderService {
         order.setAssists(list);
         orderRepository.save(order);
     }
+
 }
